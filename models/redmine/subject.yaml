@@ -1,0 +1,8 @@
+# A subject: models that share one @context and one vocabulary. Write the title and description in each language.
+name: redmine
+version: 0.1.0
+source: minted
+title:
+  en: Redmine
+description:
+  en: "Redmine issues as NGSI-LD entities: datamodels.jp's Task with the terms that Redmine adds, as the GTT project's plugin redmine_gtt_fiware sends them."

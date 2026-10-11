@@ -1,0 +1,64 @@
+title:
+  en: Task
+description:
+  en: "A tracked unit of work: a ticket or issue in a tracker, a calendar to-do, a municipal work order. State and priority follow RFC 8984 (JSCalendar); the source system's own status name and kind are kept in statusLabel and subtype. Location may be any geometry."
+status: experimental
+attributes:
+  name:
+    en: Name or subject
+  description:
+    en: Description
+  project:
+    en: The project this belongs to, when the source system has projects
+  milestone:
+    en: The milestone (version, release) this is planned for
+  parent:
+    en: Parent task (RFC 8984 relatedTo parent)
+  relatedTo:
+    en: Related tasks. Always an array in the key-values form, even with one target. The kind of relation (blocks, precedes, duplicates) is left to extensions
+  refersTo:
+    en: The entity this task is about (a report, an asset, a road)
+  progress:
+    en: "Normalised state (RFC 8984 progress): needs-action = not started, in-process = in progress, completed = done, failed = failed, cancelled = cancelled. When no value fits, leave it out and give the local wording in statusLabel."
+  statusLabel:
+    en: The source system's own status name, unchanged (for example "In progress", "Resolved"). Required when progress is left out
+  subtype:
+    en: The source system's kind, for example a tracker, an issue type or a category
+  category:
+    en: The Redmine issue category, a name that the project defines (for example "Pothole"), unchanged
+  priority:
+    en: "Priority 0 to 9: 1 highest, 9 lowest, 0 undefined (RFC 8984)"
+  assignee:
+    en: "Assignees: person, organisation or team entities, possibly outside this subject. Always an array in the key-values form, even with one target"
+  author:
+    en: Creator (a person, organisation or team entity)
+  start:
+    en: "Planned start: a date, or a date and time (RFC 8984 start)"
+  due:
+    en: "Due: a date, or a date and time (RFC 8984 due)"
+  completedAt:
+    en: When progress became completed
+  estimatedDuration:
+    en: Estimated effort as an ISO 8601 duration, e.g. PT1H30M (RFC 8984 estimatedDuration)
+  percentComplete:
+    en: Completion 0 to 100 (RFC 8984 percentComplete)
+  keywords:
+    en: Keywords or labels
+  location:
+    en: "Location as any GeoJSON geometry: point, line, polygon or a collection"
+  spatialId:
+    en: Spatial IDs (ZFXY) covering the task. Optional
+  isPrivate:
+    en: true when private; default false
+  source:
+    en: URL of this object in the system of record
+  externalId:
+    en: Identifier in the system of record
+  dateCreated:
+    en: Creation time in the system of record (distinct from the broker attribute createdAt)
+  dateModified:
+    en: Last modification time in the system of record
+extends:
+  - typeIri: https://datamodels.jp/ns/task/Task
+    version: 1.0.0
+    index: https://datamodels.jp/catalog.json
