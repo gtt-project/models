@@ -1,0 +1,54 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "label": {
+      "@id": "rdfs:label",
+      "@container": "@language"
+    },
+    "comment": {
+      "@id": "rdfs:comment",
+      "@container": "@language"
+    },
+    "subClassOf": {
+      "@id": "rdfs:subClassOf",
+      "@type": "@id"
+    },
+    "isDefinedBy": {
+      "@id": "rdfs:isDefinedBy",
+      "@type": "@id"
+    },
+    "seeAlso": {
+      "@id": "rdfs:seeAlso",
+      "@type": "@id"
+    },
+    "versionInfo": "owl:versionInfo"
+  },
+  "@graph": [
+    {
+      "@id": "https://models.gtt-project.org/ns/redmine#",
+      "@type": "owl:Ontology",
+      "label": {
+        "en": "Redmine"
+      },
+      "comment": {
+        "en": "Redmine issues as NGSI-LD entities: datamodels.jp's Task with the terms that Redmine adds, as the GTT project's plugin redmine_gtt_fiware sends them."
+      },
+      "versionInfo": "0.1.0",
+      "seeAlso": "https://models.gtt-project.org/context/redmine/v0.1.0.jsonld"
+    },
+    {
+      "@id": "https://models.gtt-project.org/ns/redmine#category",
+      "@type": "rdf:Property",
+      "label": {
+        "en": "category"
+      },
+      "comment": {
+        "en": "The Redmine issue category, a name that the project defines (for example \"Pothole\"), unchanged"
+      },
+      "isDefinedBy": "https://models.gtt-project.org/ns/redmine#",
+      "seeAlso": "https://models.gtt-project.org/models/redmine/Task/#category"
+    }
+  ]
+}

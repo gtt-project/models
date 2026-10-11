@@ -1,7 +1,7 @@
 title:
-  en: Task
+  en: Issue
 description:
-  en: "A tracked unit of work: a ticket or issue in a tracker, a calendar to-do, a municipal work order. State and priority follow RFC 8984 (JSCalendar); the source system's own status name and kind are kept in statusLabel and subtype. Location may be any geometry."
+  en: "An issue in Redmine. It is datamodels.jp's Task under Redmine's name: the short name is Issue, the type IRI is Task's (https://datamodels.jp/ns/task/Task), so applications that know Task read it as a Task. State and priority follow RFC 8984 (JSCalendar); the Redmine status name and tracker are kept in statusLabel and subtype. Location may be any geometry."
 status: experimental
 attributes:
   name:
