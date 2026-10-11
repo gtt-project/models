@@ -1,6 +1,6 @@
 # A subject: models that share one @context and one vocabulary. Write the title and description in each language.
 name: redmine
-version: 0.1.0
+version: 0.2.0
 source: minted
 title:
   en: Redmine

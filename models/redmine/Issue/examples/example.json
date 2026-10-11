@@ -1,6 +1,6 @@
 {
-  "id": "urn:ngsi-ld:Task:redmine:gtt.example.org:1234",
-  "type": "Task",
+  "id": "urn:ngsi-ld:Issue:redmine:gtt.example.org:1234",
+  "type": "Issue",
   "name": "Pothole on Main Street near the school",
   "description": "Reported by a resident. Check the size and close the lane if needed.",
   "project": "urn:ngsi-ld:Project:redmine:gtt.example.org:road-maintenance",
