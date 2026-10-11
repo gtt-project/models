@@ -1,0 +1,29 @@
+{
+  "id": "urn:ngsi-ld:Task:redmine:gtt.example.org:1234",
+  "type": "Task",
+  "name": "Pothole on Main Street near the school",
+  "description": "Reported by a resident. Check the size and close the lane if needed.",
+  "project": "urn:ngsi-ld:Project:redmine:gtt.example.org:road-maintenance",
+  "progress": "needs-action",
+  "statusLabel": "New",
+  "subtype": "Road damage",
+  "category": "Pothole",
+  "priority": 3,
+  "assignee": [
+    "urn:ngsi-ld:Group:redmine:gtt.example.org:7"
+  ],
+  "start": "2026-10-12",
+  "due": "2026-10-16",
+  "percentComplete": 0,
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      11.5761,
+      48.1374
+    ]
+  },
+  "source": "https://gtt.example.org/issues/1234",
+  "externalId": "1234",
+  "dateCreated": "2026-10-11T09:20:00+02:00",
+  "dateModified": "2026-10-11T09:20:00+02:00"
+}

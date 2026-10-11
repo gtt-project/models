@@ -1,0 +1,10 @@
+{
+  "@context": [
+    "https://datamodels.jp/context/task/v1.0.0.jsonld",
+    {
+      "redmine": "https://models.gtt-project.org/ns/redmine#",
+      "Task": "https://datamodels.jp/ns/task/Task",
+      "category": "redmine:category"
+    }
+  ]
+}
