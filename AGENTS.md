@@ -4,13 +4,13 @@ GTT's data model node, published at https://models.gtt-project.org by [datamodel
 
 ## Setup
 
-- Nothing to install: the commands run with `npx @geolonia/datamodels@0.3.9` (Node.js 24 or later).
-- Build: `npx @geolonia/datamodels@0.3.9 build` (into `_site/`).
-- Move to a newer toolkit: `npx @geolonia/datamodels@0.3.9 upgrade`.
+- Nothing to install: the commands run with `npx @geolonia/datamodels@0.3.10` (Node.js 24 or later).
+- Build: `npx @geolonia/datamodels@0.3.10 build` (into `_site/`).
+- Move to a newer toolkit: `npx @geolonia/datamodels@0.3.10 upgrade`.
 
 ## Test
 
-- Check: `npx @geolonia/datamodels@0.3.9 check` (also runs on every pull request).
+- Check: `npx @geolonia/datamodels@0.3.10 check` (also runs on every pull request).
 
 ## Constraints
 
