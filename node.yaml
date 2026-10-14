@@ -4,6 +4,11 @@ baseUrl: https://models.gtt-project.org
 iris: hash
 languages:
   - en
+# The node's name and what it publishes, shown on its pages and in catalog.json.
+title:
+  en: "GTT Project data models"
+description:
+  en: "NGSI-LD data models for Redmine with the GTT plugins: issues as datamodels.jp Tasks, with the terms that Redmine adds."
 publisher:
   name:
     en: GTT Project
