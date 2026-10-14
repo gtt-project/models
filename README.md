@@ -9,6 +9,6 @@ A data model node: JSON Schemas, JSON-LD @contexts and vocabularies at https://m
 The models are dedicated to the public domain under [CC0 1.0](LICENSE).
 
 ```bash
-npx @geolonia/datamodels@0.3.10 check
-npx @geolonia/datamodels@0.3.10 build   # into _site/
+npx @geolonia/datamodels@0.3.14 check
+npx @geolonia/datamodels@0.3.14 build   # into _site/
 ```
